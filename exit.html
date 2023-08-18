@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exit</title>
+    <link rel="stylesheet" href="assets/css/exit.css" />
+</head>
+<body background="images/banner.jpg">
+    <div class="cover">
+    
+    <!-- TITULO -->
+
+    <h1 id="title">Survey Form</h1>
+    <p id="description"><i>Thank you for taking the time to fill in this survey!</i></p>
+    
+
+    <!-- FORMULARIO -->
+
+    <form id="survey-form" action="https://github.com/Gauravmane16" method="post">
+
+    <!-- Primer bloque: Información personal (Nombre, Email, Edad, Nivel de Español) -->
+
+      <fieldset>
+            <legend>Let us know about you :</legend>
+            <img id="logo" src="images/80.jpg" alt="SPATULA logo" >
+          
+        <label id="name-label" for="name">Name: 
+          <input  id="name"
+                  name="name"
+                  type="text" 
+                  placeholder=" Enter your name"
+                  required>
+        </label>
+
+        <label id="email-label" for="email">Email: 
+          <input  id="email" 
+                  name="email"
+                  type="email" 
+                  placeholder=" Enter your Email"
+                  required>
+        </label>
+
+        
+
+       
+      </fieldset>
+
+<!-- Segundo bloque: Profesor o estudiante -->
+      
+      <fieldset>
+        <legend>Are you a teacher or a student?</legend>
+        
+        <label id="student-label" 
+               for="student">
+          <input id="student" 
+                 name="student-teacher"
+                 type="radio"
+                 value="student"> Student
+        </label>
+
+        <label id="teacher-label" 
+               for="teacher">
+          <input id="teacher" 
+                 name="student-teacher"
+                 type="radio"
+                 value="teacher"> Teacher
+        </label>
+      </fieldset>
+
+<!-- Tercer bloque: Contenido, Ideas -->
+
+      <fieldset>
+        <legend>What kind of content are you interested in?</legend>
+
+        <label id="content1-label" for="content1">
+          <input id="content1"
+                 name="content1"
+                 type="checkbox"
+                 value="1"> Private one to one lessons
+        </label>
+
+        <label id="content2-label" for="content2">
+          <input id="content2"
+                 name="content2"
+                 type="checkbox"
+                 value="2"> Group lessons
+        </label>
+
+        <label id="content3-label" for="content3">
+          <input id="content3"
+                 name="content3"
+                 type="checkbox"
+                 value="3"> Exam preparation courses
+        </label>
+
+        <label id="content4-label" for="content4">
+          <input id="content4"
+                 name="content4"
+                 type="checkbox"
+                 value="4"> Books for kids
+        </label>
+
+        <label id="else-label" for="else">Any comments or suggestions?
+          <textarea id="else" 
+                    name="else" 
+                    rows="5" 
+                    cols="30">I am interested in...
+          </textarea>
+        </label>
+      </fieldset>
+      <div class="rate">
+        <input type="radio" id="star5" name="rate" value="5" />
+        <label for="star5" title="text">5 stars</label>
+        <input type="radio" id="star4" name="rate" value="4" />
+        <label for="star4" title="text">4 stars</label>
+        <input type="radio" id="star3" name="rate" value="3" />
+        <label for="star3" title="text">3 stars</label>
+        <input type="radio" id="star2" name="rate" value="2" />
+        <label for="star2" title="text">2 stars</label>
+        <input type="radio" id="star1" name="rate" value="1" />
+        <label for="star1" title="text">1 star</label>
+      </div>
+      <input id="submit" type="submit" value="Submit">
+      
+    </form>
+    
+    </div>
+  </body>
+
+</html>
